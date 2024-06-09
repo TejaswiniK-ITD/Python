@@ -1,0 +1,14 @@
+def display_unique_words():
+    words = []
+    unique_words = set()
+    while True:
+        word = input().strip()
+        if word == "":
+            break
+        words.append(word)
+        unique_words.add(word)
+    for word in words:
+        if word in unique_words:
+            print(word)
+            unique_words.remove(word)
+display_unique_words()
