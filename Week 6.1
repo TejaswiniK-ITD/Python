@@ -1,0 +1,12 @@
+from collections import defaultdict
+
+n=int(input())
+A=list(map(int,input().strip().split()))[:n]
+B=list(map(int,input().strip().split()))[:n]
+
+idxmap=defaultdict(set)
+for i,num in enumerate(B):
+    idxmap[num].add(i)
+    
+result=[idxmap[num].pop() for num in A]
+print(*result)
