@@ -1,0 +1,7 @@
+x=str(input())
+if(x=='February'):
+    print(x,"has 28 or 29 days in it.")
+elif(x=='January' or x=='March' or x=='May' or x=='July' or x=='August' or x=='October' or x=='December'):
+    print(x,"has 31 days in it.")
+else:
+    print(x,"has 30 days in it.")
