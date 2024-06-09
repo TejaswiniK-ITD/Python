@@ -1,0 +1,14 @@
+import math
+n=int(input())
+sum=0
+num=n
+l=int(math.log10(n))+1
+while(n!=0):
+    last=n%10
+    sum=int(sum+math.pow(last,l))
+    n=n//10
+    l-=1
+if(sum==num):
+    print("Yes")
+else:
+    print("No")
