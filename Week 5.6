@@ -1,0 +1,10 @@
+n=input()
+x,y,z=0,0,0
+for i in n:
+    if(i.isalpha()):
+        x+=1
+    elif(i.isalnum()):
+        y+=1
+    else:
+        z+=1
+print(x,y,z,sep="\n")
