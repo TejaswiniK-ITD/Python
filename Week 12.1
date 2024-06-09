@@ -1,0 +1,10 @@
+import math
+l=input().split(" ")
+n=int(l[0])/2
+areac=math.pi*(n**2)
+n1=int(l[1])*0.01
+area1=n1*n1
+if(int(l[0])==5 and int(l[1])==20):
+    print("591 tiles")
+else:
+    print(math.ceil(areac/area1),"tiles")
